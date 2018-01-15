@@ -1,10 +1,10 @@
 
 public class HeapData<T> {
     private T key;      //generic key
-    private int pty;    //priority
+    private double pty;    //priority
     
     
-    public HeapData(T key, int pty){
+    public HeapData(T key, double pty){
         this.key = key;
         this.pty = pty;
     }
@@ -13,7 +13,7 @@ public class HeapData<T> {
         this.key = key;
     }
     
-    public void setPty(int pty){
+    public void setPty(double pty){
         this.pty = pty;
     }
     
@@ -21,7 +21,7 @@ public class HeapData<T> {
         return key;
     }
     
-    public int getPty(){
+    public double getPty(){
         return pty;
     }
 }
